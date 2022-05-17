@@ -1,4 +1,4 @@
-import turtle
+import turtle_star
 import math
 
 wn = turtle.Screen()

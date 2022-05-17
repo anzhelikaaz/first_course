@@ -1,5 +1,5 @@
 #drawing a regular pentagon
-import turtle
+import turtle_star
 
 
 wn = turtle.Screen()

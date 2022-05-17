@@ -1,6 +1,5 @@
-#drawing some flower by turtle
+# drawing some flower by turtle
 import turtle
-
 
 wn = turtle.Screen()
 flower = turtle.Turtle()
@@ -8,6 +7,7 @@ flower.speed(0)
 flower.color('pink')
 wn.bgcolor('green')
 flower.pensize(5)
+
 
 for f_ in range(10):
     for _ in range(3):
