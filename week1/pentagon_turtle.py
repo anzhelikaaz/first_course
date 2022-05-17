@@ -4,7 +4,7 @@ import turtle
 
 wn = turtle.Screen()
 pol = turtle.Turtle()
-pol.color('darkgreen')
+pol.color('green')
 pol.speed(15)
 
 for p in range(5):
