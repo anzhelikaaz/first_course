@@ -1,6 +1,15 @@
-a = [4, 5, 6, 7, 8, 2, 1, 3, 25, 35]
-b = [77, 23, 43, 56, 63, 9, 32, 5, 21, 34]
-c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+num_elements = int(input('Number of elements in the lists: '))
+a = []
+b = []
+
+for i in range(num_elements):
+    x = float(input('Input elements of the first list: '))
+    y = float(input('Input elements of the second list: '))
+    a.append(x)
+    b.append(y)
+print(a, b)
+
+c = list(range(num_elements))
 arr_sum = 0
 
 print('Equal lengths of vectors: ', len(a) == len(b))
