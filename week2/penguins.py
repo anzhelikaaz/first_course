@@ -5,6 +5,17 @@
 
 n = int(input('Number of the penguins from 1 to 9: ', ))
 
+# making a penguin by loop and tuple
+elements_p = ('     _~_     ',
+              '    (o o)    ',
+              '   /  V  \   ',
+              '  /(  _  )\  ',
+              '    ^^ ^^    ')
+
+for i in range(len(elements_p)):
+    print(elements_p[i] * n)
+
+# making a penguin by print
 print(
 '     _~_     ' * n,
 '    (o o)    ' * n,
