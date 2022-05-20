@@ -15,6 +15,10 @@ elements_p = ('     _~_     ',
 for i in range(len(elements_p)):
     print(elements_p[i] * n)
 
+# other way of loop without using index
+for elem_p in elements_p:
+    print(elem_p * n)
+
 # making a penguin by print
 print(
 '     _~_     ' * n,
@@ -22,5 +26,6 @@ print(
 '   /  V  \   ' * n,
 '  /(  _  )\  ' * n,
 '    ^^ ^^    ' * n, sep='\n' )
+
 
 
