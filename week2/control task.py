@@ -37,3 +37,21 @@ for i in range(n):
     sum_val += x[i]
 print(sum_val)
 
+# create a list of numbers from 0 to 67
+nums = range(68)
+print(nums)
+
+#
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
+split_str = original_str.split()
+num_words_list = []
+for words in split_str:
+    num_words_list.append(len(words))
+
+#
+lett = ''
+
+for i in range(1):
+    lett = 'b' * 7
+    print(lett)
+
