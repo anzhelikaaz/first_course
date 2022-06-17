@@ -27,8 +27,7 @@ sixth_num = int(sixth_num)
 
 if (first_num + second_num + third_num) == (fourth_num + fifth_num + sixth_num):
     print("Счастливый")
-
-elif (first_num + second_num + third_num) != (fourth_num + fifth_num + sixth_num):
+else:
     print("Обычный")
 
 # Second way of solving
