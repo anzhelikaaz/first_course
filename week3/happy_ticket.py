@@ -6,13 +6,11 @@
 которая проверит равенство сумм и выведет "Счастливый", если суммы совпадают, и "Обычный", если суммы различны.
 На вход программе подаётся строка из шести цифр.
 Выводить нужно только слово "Счастливый" или "Обычный", с большой буквы.
-
 '''
 
-num_ticket = input('Введите номер билета: ')
+num_ticket = list(input('Введите номер билета: '))
 
-l_ticket = len(num_ticket)
-
+# The first way of solving (simple)
 first_num = num_ticket[0]
 second_num = num_ticket[1]
 third_num = num_ticket[2]
@@ -33,4 +31,22 @@ if (first_num + second_num + third_num) == (fourth_num + fifth_num + sixth_num):
 elif (first_num + second_num + third_num) != (fourth_num + fifth_num + sixth_num):
     print("Обычный")
 
+# Second way of solving
+sum_first_part = 0  # num_ticket[0:3]
+sum_second_part = 0  # num_ticket[3:]
 
+for i in range(3):
+    sum_first_part += int(num_ticket[i])
+    sum_second_part += int(num_ticket[3 + i])
+
+if sum_first_part == sum_second_part:
+    print('Счастливый')
+else:
+    print('Обычный')
+
+# Third way of solving
+l = list(map(int, list(input())))
+if sum(l[:3]) == sum(l[3:]):
+    print('Счастливый')
+else:
+    print('Обычный')
