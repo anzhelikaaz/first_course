@@ -6,3 +6,12 @@ chars = []
 for i in str1:
     chars.append(i)
 print(chars)
+
+# Some version
+ael = "python!"
+app = []
+
+for char in ael:
+    app.append(char)
+
+print(app)
