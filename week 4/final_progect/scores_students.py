@@ -6,7 +6,8 @@ scores = scores.split()
 a_scores = 0
 
 for score in scores:
-    if score >= '90' or score == '100':
+    score = int(score)
+    if score >= 90:
         a_scores += 1
 print(a_scores)
 
