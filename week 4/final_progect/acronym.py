@@ -7,13 +7,14 @@
 stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', "The"]
 org = "The organization for health, safety, and education"
 acro = ""
-acronym = []
 
 org = org.replace(',', '')
 org = org.split()
 for elem in org:
-    if elem in stopwords:
-        acronym = []
-    else:
+    if elem not in stopwords:
         acro += elem[0]
 print(acro.upper())
+
+# Second way of using if
+# if (elem in stopwords) == False:
+#     acro += elem[0]
