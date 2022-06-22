@@ -8,10 +8,14 @@ r_phrase = ''
 p_phrase_new = p_phrase.replace(' ', '')
 p_phrase_new = p_phrase_new.lower()
 
-for i in range(len(p_phrase) - 1, 0 - 1, -1):
-    r_phrase += p_phrase[i]
+# Solving with loop
+# for i in range(len(p_phrase_new) - 1, -1, -1):
+#     r_phrase += p_phrase_new[i]
 
-r_phrase = r_phrase.replace(' ', '')
-r_phrase = r_phrase.lower()
+# Solving with slice
+r_phrase = p_phrase_new[::-1]
+print(r_phrase)
+
 if p_phrase_new == r_phrase:
     print(True)
+
