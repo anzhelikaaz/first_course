@@ -2,14 +2,11 @@ stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The'
 sent = "The water earth and air are vital"
 
 acro = ""
-acronym = []
 
 sent = sent.split()
 
 for elem in sent:
-    if elem in stopwords:
-        acronym = []
-    else:
+    if elem not in stopwords:
         acro += elem[0:2]
         if elem != sent[-1]:
             acro += '. '
